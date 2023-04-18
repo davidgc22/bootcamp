@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: flex;   
+}
+.barra-lateral{
+    flex: 1 1 50px;
+    background-color: #f1f1f1;
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navegacion a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.contenido{
+    flex: 2 1 0;
+}
+@media (max-width: 640px) {
+    .contenedor {
+      flex-direction: column;
+    }
+  
+    .barra-lateral {
+      flex: 0 0 auto;
+    }
+  
+    .navegacion {
+      flex-direction: row;
+    }
+  }
